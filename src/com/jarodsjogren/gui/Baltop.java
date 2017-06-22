@@ -81,16 +81,16 @@ public class Baltop implements Listener{
 			}
 			rank ++;
 			lore.add(" ");
-            lore.add(ChatColor.GOLD + "* " + ChatColor.YELLOW + "Rank " + ChatColor.WHITE + "#" + rank);
-            lore.add(ChatColor.GOLD + "* " + ChatColor.YELLOW + "Balance " + ChatColor.WHITE + "$" + econ.getBalance(Bukkit.getOfflinePlayer(top.get(0))));
+            		lore.add(ChatColor.GOLD + "* " + ChatColor.YELLOW + "Rank " + ChatColor.WHITE + "#" + rank);
+           		 lore.add(ChatColor.GOLD + "* " + ChatColor.YELLOW + "Balance " + ChatColor.WHITE + "$" + econ.getBalance(Bukkit.getOfflinePlayer(top.get(0))));
 			ItemStack is = new ItemStack(Material.SKULL_ITEM, 1, (short) 3);
-            SkullMeta meta = (SkullMeta) is.getItemMeta();
-            meta.setDisplayName(ChatColor.YELLOW + "[|] " + ChatColor.GOLD + ChatColor.UNDERLINE + top.get(0));
-            meta.setOwner(top.get(0));
-            meta.setLore(lore);
-            is.setItemMeta(meta);
-            baltop.setItem(m, is);
-            top.remove(0);
+           		 SkullMeta meta = (SkullMeta) is.getItemMeta();
+            		meta.setDisplayName(ChatColor.YELLOW + "[|] " + ChatColor.GOLD + ChatColor.UNDERLINE + top.get(0));
+            		meta.setOwner(top.get(0));
+            		meta.setLore(lore);
+            		is.setItemMeta(meta);
+            		baltop.setItem(m, is);
+           		 top.remove(0);
 		}
 
 		user.openInventory(baltop);
