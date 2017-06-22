@@ -1,0 +1,13 @@
+name: GUI-Tide
+main: com.jarodsjogren.gui.GUI
+version: 1.0
+commands:
+  kits:
+    description: Open kits GUI
+    usage: /kits
+  warps:
+    description: Open warps GUI
+    usage: /warps
+  baltop:
+    description: Open baltop GUI
+    usage: /baltop
